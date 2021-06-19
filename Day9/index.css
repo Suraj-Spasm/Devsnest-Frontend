@@ -1,0 +1,31 @@
+body{
+    background-color: blanchedalmond;
+}
+
+.container{
+    height: 65vh;
+    width: 125vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". . . . . ."
+          ". . . . . ."
+          ". . . . . ."
+          ". . . . . ."
+          ". . . . . ."
+          ". . . . . .";
+        
+
+}
+.box{
+    height: 10vh;
+    width: 20vh;
+    background-color: coral;
+    border: 1px solid black;
+}
+.active{
+    background-color: rgb(45, 45, 247);
+}

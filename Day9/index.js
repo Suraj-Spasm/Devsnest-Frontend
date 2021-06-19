@@ -1,0 +1,13 @@
+let seats = 0;
+const rectangles = document.querySelectorAll(".box");
+Array.from(rectangles).forEach((box) => {
+  box.addEventListener("click", (x) => {
+    let result = box.classList.toggle("active");
+    console.log(result)
+    if (result) seats++;
+    else seats--;
+    document.querySelector(".bs").innerHTML = "Booked Seats : " + seats;
+    const remaining = (document.querySelector(".rs").innerHTML =
+      "Remaining Seats : " + (36 - seats));
+  });
+});
