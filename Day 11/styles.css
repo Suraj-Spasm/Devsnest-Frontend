@@ -11,11 +11,8 @@
 
   }
   .container {
-    /* background: linear-gradient(rgb(66, 66, 66), rgb(27, 27, 27), black); */
-    /* background: linear-gradient(rgb(66, 66, 66), #252525, rgb(24, 23, 23)); */
     background: rgba(117, 62, 62, 0.2);
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
-    /* box-shadow: 5px 5px 20px #1e1e1e, -10px -10px 20px #343434; */
     height: 570px;
     width: 400px;
     display: flex;
