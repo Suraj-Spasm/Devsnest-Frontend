@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1.list {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.calorie-list {
+  margin-top: 20px;
+  width: 45%;
+  height: 350px;
+  overflow-y: auto;
+  box-shadow: 2px 3px 9px -1px #000;
+  background: #ffffff;
+}
+
+.calorie-list .cards {
+  padding: 15px 10px;
+  margin: 10px 20px;
+  transition: 0.3s;
+  border-bottom: 1px solid rgb(110, 106, 106);
+  background-color: white;
+}
+
+.calorie-list .cards:hover {
+  background-color: rgb(25, 85, 119);
+}
+
+.calorie-list .empty {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.calorie-list .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calorie-list .cards .del-btn {
+  cursor: pointer;
+  transition: 0.45s;
+}
+
+.calorie-list .cards .del-btn:hover {
+  transform: scale(1.5);
+}
